@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+body a img {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.pokemon-container {
+    background-color: white;
+    display: flex;
+    width: 700px;
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+.container-head {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-sprite {
+    display: grid;
+    text-align: center;
+    width: 50%;
+    height: 450px;
+    padding: 20px;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.pokemon-sprite img {
+    width: 90%;
+    scale: 0.9;
+}
+
+.pokemon-stats {
+    width: 50%;
+    height: 450px;
+}
+
+.pokedex-data {
+    padding: 20px;
+    height: 50%;
+    width: 100%;
+}
+
+.base-stats {
+    padding: 20px;
+    height: 50%;
+    width: 100%;
+}
+
+.stat {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    width: 70px;
+    padding: 0%;
+}
+
+.stat div {
+    margin: 0;
+}
+
+table {
+    width: 90%;
+    border: 1px ;
+    margin: 0;
+}
+
+td,th{
+    text-align: start;
+    padding: 3px;
+    padding-right: 5px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.previous {
+    left: 10px;
+    top: 100px;
+}
+
+.next {
+    right: 10px;
+    top: 100px;
+}
+
+td span {
+    margin-right: 5px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid gray;
+    background-color: darkgoldenrod;
+}
+
+td div {
+    background-color: lightgreen;
+    height: 15px;
+    width: 100%;
+    border: 1.5px solid green;
+}
+
+/* pokemon types */
+.Normal {
+    background-color: #a8a878;
+}
+
+.Fire {
+    background-color: #f08030;
+}
+
+.Water {
+    background-color: #6890f0;
+}
+
+.Electric {
+    background-color: #f8d030;
+}
+
+.Grass {
+    background-color: #78c850;
+}
+
+.Ice {
+    background-color: #98D8D8;
+}
+
+.Fighting {
+    background-color: #C03028;
+}
+
+.Poison {
+    background-color: #A040A0;
+}
+
+.Ground {
+    background-color: #E0C068;
+}
+
+.Flying {
+    background-color: #A890F0;
+}
+
+.Psychic {
+    background-color: #F85888;
+}
+
+.Bug {
+    background-color: #A8B820;
+}
+
+.Rock {
+    background-color: #B8A038;
+}
+
+.Ghost {
+    background-color: #705898;
+}
+
+.Dragon {
+    background-color: #7038F8;
+}
+
+.Dark {
+    background-color: #705848;
+}
+
+.Steel {
+    background-color: #B8B8D0;
+}
+
+.Fairy {
+    background-color: #F0B6BC;
+}

@@ -1,0 +1,267 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(250, 177, 244);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    top: 0;    
+    border: 1px solid black;
+    box-shadow: 0 1px 5px black;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.main-container h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.main-container > img {
+    position:fixed;
+    width: 150vh;
+    margin: 5% auto;
+    right: 0;
+    left: 0;
+    top: -50px;
+    z-index: -3;
+    opacity: 0.1;
+    rotate: -30deg;
+}
+
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px ;
+    justify-content: space-evenly;
+    align-content: stretch;
+    margin-top: 120px;
+}
+
+.card {
+    height: 360px;
+    width: 250px;
+    box-shadow: 0 1px 5px black !important;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgb(230, 230, 230) !important;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    transition: 0.5s;
+    box-shadow: 0 0px 5000px black;
+    border: 1px solid black;
+}
+
+.card:hover img{
+    scale: 0.85;
+    transition: 0.5s;
+}
+
+.bg-img {
+    background-color: white;
+    width: 100%;
+    height: 250px;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    scale: 0.7;
+    padding: 5px;
+}
+
+.pokemon-id {
+    font-weight: 500;
+    margin-bottom: -5px;
+    margin-top: 10px;
+}
+
+.pokemon-name {
+    font-weight: bolder;
+}
+
+.pokemon-type {
+    margin-top: 10px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+li {
+    margin: 5px;
+}
+
+li span {
+    margin: 3px;
+    padding: 3px 15px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid gray;
+}
+
+/* Pokemon types & Hover*/
+.Normal {
+    background-color: #a8a878;
+    box-shadow: 2px 2px 2px grey;
+}
+.Normal:hover img {
+    filter: drop-shadow(0 0 10px #a8a878);
+}
+
+.Fire {
+    background-color: #f08030;
+    box-shadow: 2px 2px 2px grey;
+}
+.Fire:hover img {
+    filter: drop-shadow(0 0 10px #f08030);
+}
+
+.Water {
+    background-color: #6890f0;
+    box-shadow: 2px 2px 2px grey;
+}
+.Water:hover img {
+    filter: drop-shadow(0 0 10px #6890f0);
+}
+
+.Electric {
+    background-color: #f8d030;
+    box-shadow: 2px 2px 2px grey;
+}
+.Electric:hover img {
+    filter: drop-shadow(0 0 10px #f8d030);
+}
+
+.Grass {
+    background-color: #78c850;
+    box-shadow: 2px 2px 2px grey;
+}
+.Grass:hover img {
+    filter: drop-shadow(0 0 10px #78c850);
+}
+
+.Ice {
+    background-color: #98D8D8;
+    box-shadow: 2px 2px 2px grey;
+}
+.Ice:hover img {
+    filter: drop-shadow(0 0 10px #98D8D8);
+}
+
+.Fighting {
+    background-color: #C03028;
+    box-shadow: 2px 2px 2px grey;
+}
+.Fighting:hover img {
+    filter: drop-shadow(0 0 10px #C03028);
+}
+
+.Poison {
+    background-color: #A040A0;
+    box-shadow: 2px 2px 2px grey;
+}
+.Poison:hover img {
+    filter: drop-shadow(0 0 10px #A040A0);
+}
+
+.Ground {
+    background-color: #E0C068;
+    box-shadow: 2px 2px 2px grey;
+}
+.Ground:hover img {
+    filter: drop-shadow(0 0 10px #E0C068);
+}
+
+.Flying {
+    background-color: #A890F0;
+    box-shadow: 2px 2px 2px grey;
+}
+.Flying:hover img {
+    filter: drop-shadow(0 0 10px #A890F0);
+}
+
+.Psychic {
+    background-color: #F85888;
+    box-shadow: 2px 2px 2px grey;
+}
+.Psychic:hover img {
+    filter: drop-shadow(0 0 10px #F85888);
+}
+
+.Bug {
+    background-color: #A8B820;
+    box-shadow: 2px 2px 2px grey;
+}
+.Bug:hover img {
+    filter: drop-shadow(0 0 10px #A8B820);
+}
+
+.Rock {
+    background-color: #B8A038;
+    box-shadow: 2px 2px 2px grey;
+}
+.Rock:hover img {
+    filter: drop-shadow(0 0 10px #B8A038);
+}
+
+.Ghost {
+    background-color: #705898;
+    box-shadow: 2px 2px 2px grey;
+}
+.Ghost:hover img {
+    filter: drop-shadow(0 0 10px #705898);
+}
+
+.Dragon {
+    background-color: #7038F8;
+    box-shadow: 2px 2px 2px grey;
+}
+.Dragon:hover img {
+    filter: drop-shadow(0 0 10px #7038F8);
+}
+
+.Dark {
+    background-color: #705848;
+    box-shadow: 2px 2px 2px grey;
+}
+.Dark:hover img {
+    filter: drop-shadow(0 0 10px #705848);
+}
+
+.Steel {
+    background-color: #B8B8D0;
+    box-shadow: 2px 2px 2px grey;
+}
+.Steel:hover img {
+    filter: drop-shadow(0 0 10px #B8B8D0);
+}
+
+.Fairy {
+    background-color: #F0B6BC;
+    box-shadow: 2px 2px 2px grey;
+}
+.Fairy:hover img {
+    filter: drop-shadow(0 0 10px #F0B6BC);
+}
