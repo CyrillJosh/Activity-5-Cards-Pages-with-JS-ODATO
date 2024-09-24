@@ -24,7 +24,6 @@ $(document).ready(function () {
         let height = pokemon["profile"]["height"];
         let weight = pokemon["profile"]["weight"];
         let abilities = pokemon["profile"]["ability"];
-        console.log(abilities);
         let abilitiesHTML = "";
         abilities.forEach(ability => {
             abilitiesHTML += `<span class="${ability[0]}">${ability[0]}</span>`;

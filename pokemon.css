@@ -4,27 +4,19 @@
 
 body {
     background-color: aquamarine;
-    height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .main-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    height: 100vh;
     margin: 0;
-    margin-top: 10px;
     padding: 20px;
-}
-
-body a img {
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    height: 25px;
-    width: 25px;
+    align-content: center;
 }
 
 .pokemon-container {
@@ -96,10 +88,18 @@ table {
     margin: 0;
 }
 
-td,th{
+td,th {
     text-align: start;
     padding: 3px;
     padding-right: 5px;
+}
+
+.return, .return img{
+    position: absolute;
+    left: 5;
+    top: 5;
+    height: 25px;
+    width: 25px;
 }
 
 h3 {
@@ -116,6 +116,7 @@ h3 {
     top: 100px;
 }
 
+/* Abilities */
 td span {
     margin-right: 5px;
     padding: 3px 10px;
