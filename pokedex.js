@@ -41,6 +41,6 @@ $(document).ready(function() {
     });
 })
 
-function SetID(id){
+function SetID(--id){
     window.location.href="pokemon.html?"+"id="+id;
 };
