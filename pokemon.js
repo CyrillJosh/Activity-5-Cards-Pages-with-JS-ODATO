@@ -1,6 +1,4 @@
-let nid = localStorage.getItem("id");
-localStorage.removeItem("id");
-
+let nid = new URLSearchParams(window.location.search).get("id");
 $(document).ready(function () {
     fetch("pokedex.json")
     .then((rawData) => rawData.json())
