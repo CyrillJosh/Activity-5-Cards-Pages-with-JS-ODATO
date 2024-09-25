@@ -42,6 +42,5 @@ $(document).ready(function() {
 })
 
 function SetID(id){
-    localStorage.setItem("id", --id);
-    window.location.href="pokemon.html";
+    window.location.href="pokemon.html?"+"id="+id;
 };
