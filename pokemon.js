@@ -5,6 +5,13 @@ $(document).ready(function () {
     .then((pokedex) => {
         let pokemon = pokedex[nid];
 
+        let previd = nid-1;
+        var prevpoke = pokedex[previd];
+        var prevsprite;
+        let nextid = ++nid;
+        var nextpoke = pokedex[nextid];
+        var nextsprite = nextpoke["image"]["sprite"];
+
         let id = (10000 + pokemon["id"]).toString().substring(1);
         let name = pokemon["name"]["english"];
         let types = pokemon["type"];
@@ -30,8 +37,10 @@ $(document).ready(function () {
         //display
         $(".pokemon-container").append(
             `<div class="container-head">
+                <span>            
                 <h3>${name}</h3>
                 <img src="${sprite}">
+                </span>
             </div>
             <div class="pokemon-sprite">
                 <img src="${image}">
@@ -49,6 +58,30 @@ $(document).ready(function () {
                 </div>
             </div>`
         );
+        if (prevpoke != undefined)
+        {
+            prevsprite = prevpoke["image"]["sprite"];
+            $(".container-head").html(
+                `<a href="pokemon.html?id=${nid-2}" style="height:40px; width:40px"><img src="${prevsprite}"></a>
+                <span>            
+                <h3>${name}</h3>
+                <img src="${sprite}">
+                </span>
+                <a href="pokemon.html?id=${nid}" style="height:40px; width:40px"><img src="${nextsprite}"></a>`
+            )
+        }
+        else
+        {
+            $(".container-head").html(
+                `<a style="height:40px; width:40px"></a>
+                <span>            
+                <h3>${name}</h3>
+                <img src="${sprite}">
+                </span>
+                <a href="pokemon.html?id=${nid}" style="height:40px; width:40px"><img src="${nextsprite}"></a>`
+            )
+        }
+
 
         //Pokedex data
         $(".pokedex-data").append(
@@ -88,8 +121,8 @@ $(document).ready(function () {
         for (const stat in base) {
             $(".stats").append(
                 `<tr>
-                    <td>${stat}</td>
-                    <td>${base[stat]}</td>
+                    <td width="40%">${stat}</td>
+                    <td width="15%">${base[stat]}</td>
                     <td class ="stat"><div style="width: ${(base[stat]/255)*100}%"></div></td>
                 </tr>`
             );
